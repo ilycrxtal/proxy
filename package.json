@@ -1,5 +1,3 @@
-{
-  "dependencies": {
-    "socksv5": "^0.0.6"
-  }
+"scripts": {
+  "start": "node index.js"
 }
