@@ -1,3 +1,7 @@
-"scripts": {
-  "start": "node index.js"
+{
+  "dependencies": {
+    "express": "^5.2.1",
+    "http-proxy-middleware": "^3.0.5",
+    "socksv5": "^0.0.6"
+  }
 }
