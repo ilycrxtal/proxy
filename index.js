@@ -23,7 +23,7 @@ app.use((req, res, next) => {
 app.use('/discord', createProxyMiddleware({
     target: 'https://discord.com',
     changeOrigin: true,
-    pathRewrite: { '^/proxy': '' },
+    pathRewrite: { '^/discord': '' },
 }));
 
 const PORT = process.env.PORT || 3000;
