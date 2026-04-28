@@ -19,11 +19,11 @@ app.use((req, res, next) => {
     next(); // This "Passes the Ball" to the next function
 });
 
-// 2. Your Proxy Function
-app.use('/discord', createProxyMiddleware({
+// Listen at the root '/'
+app.use('/', createProxyMiddleware({
     target: 'https://discord.com',
     changeOrigin: true,
-    pathRewrite: { '^/discord': '' },
+    // No pathRewrite needed if we are at the root!
 }));
 
 const PORT = process.env.PORT || 3000;
